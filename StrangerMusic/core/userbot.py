@@ -52,7 +52,7 @@ class Userbot(Client):
             try:
                 #await self.one.join_chat("")
                 #await self.one.join_chat("")
-                await self.one.join_chat("Lily_X_bots")
+                await self.one.join_chat("stranger_support")
             except:
                 pass
             assistants.append(1)
@@ -83,7 +83,7 @@ class Userbot(Client):
             try:
                 #await self.one.join_chat("")
                 #await self.one.join_chat("")
-                await self.one.join_chat("Lily_X_bots")
+                await self.one.join_chat("stranger_support")
             except:
                 pass
             assistants.append(2)
@@ -114,7 +114,7 @@ class Userbot(Client):
             try:
                 #await self.one.join_chat("")
                 #await self.one.join_chat("")
-                await self.one.join_chat("Lily_X_bots")
+                await self.one.join_chat("stranger_support")
             except:
                 pass
             assistants.append(3)
@@ -145,7 +145,7 @@ class Userbot(Client):
             try:
                 #await self.one.join_chat("")
                 #await self.one.join_chat("")
-                await self.one.join_chat("Lily_X_bots")
+                await self.one.join_chat("stranger_support")
             except:
                 pass
             assistants.append(4)
@@ -176,7 +176,7 @@ class Userbot(Client):
             try:
                 #await self.one.join_chat("")
                 #await self.one.join_chat("")
-                await self.one.join_chat("Lily_X_bots")
+                await self.one.join_chat("stranger_support")
             except:
                 pass
             assistants.append(5)
